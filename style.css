@@ -1,8 +1,132 @@
+html,
 body {
 	background-color: black;
 	font-family: 'Electrolize', sans-serif;
-
+	margin:0;
+	padding:0;
+	height:100%;
 }
+#page {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	border-bottom: 5px solid white;
+	height:150px;
+}
+.banner {
+	position: absolute;
+	height:100px;
+	padding-left: 30px;
+	padding-top: 15px;
+}
+.exologo {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	height: 90px;
+}
+h2 {
+	color: orange;
+}
+h3 {
+	color: #707070;
+}
+#nav {
+	bottom: 0px;
+	font-size: 1.3em;
+	position: absolute;
+	top: 120px;
+	right: 30px;
+}
+#nav li {
+	display: block;
+	float: left;
+	list-style: none;
+}
+#nav li a {
+	color: white;
+	display: block;
+	padding: 7px 20px 7px 20px;
+	margin: 5px 2px 5px 2px;
+	line-height: 1.5px;
+	text-align: center;
+	text-decoration: none;
+}
+#nav li a:hover {
+	color: orange;
+}
+#content {
+  font-size: 1em;
+  line-height: 1.5em;
+  overflow: hidden;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 75px;
+}
+#column-one {
+	float: left;
+	width: 75%;
+}
+#column-one-content{
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+}
+#column-two {
+	float: right;
+	width: 25%;
+}
+#column-two-content {
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+}
+.twitter-timeline {
+	padding-top:15px;
+	max-height:400px;
+}
+#footer {
+  border-top: 5px solid white;
+  clear: both;
+  color: white;
+  font-size: .7em;
+  position: absolute;
+  height:75px;
+  bottom:0px;
+  right: 5px;
+  left: 5px;
+}
+#footer p {
+  line-height: 1.5em;
+  margin-top: 10px;
+  text-align: center;
+}
+#footer a {
+  color: white;
+  text-decoration: underline;
+}
+#footer a:hover {
+	color: orange;
+	text-decoration: none;
+}
+#footer img {
+	position:absolute;
+	top:5px;
+	right:0px;
+	height:50px;
+}
+
+/*html,
+
+body {
+	background-color: black;
+	font-family: 'Electrolize', sans-serif;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -107,7 +231,6 @@ h3 {
 .twitter-timeline {
 	width: 100%;
 	height: 400px;
-
 }
 
 #footer {
@@ -145,3 +268,4 @@ h3 {
 
 }
 
+*/
