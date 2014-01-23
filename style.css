@@ -35,9 +35,9 @@ h3 {
 #nav {
 	bottom: 0px;
 	font-size: 1.3em;
-	position: absolute;
+	position: relative;
 	top: 120px;
-	right: 30px;
+	float: right;
 }
 #nav li {
 	display: block;
