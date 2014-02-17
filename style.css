@@ -65,21 +65,21 @@ h3 {
 #content {
   font-size: 1em;
   line-height: 1.5em;
-  overflow: scroll;
+  overflow-y: scroll;
   color: white;
   padding-top: 10px;
-  padding-bottom: 75px;
+  padding-bottom: 55px;
   top: 155px;
   bottom: 75px;
   position: absolute; 
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+  /*background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(46%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
 background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
 background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* Opera 12+ */
 background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* IE10+ */
 background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+*/
 }
 #column-one {
 	float: left;
@@ -132,4 +132,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	top:5px;
 	right:0px;
 	height:50px;
+}
+.twitter-timeline {
+	overflow: hidden;
 }
