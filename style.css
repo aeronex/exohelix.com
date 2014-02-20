@@ -1,6 +1,5 @@
 html,
 body {
-	background-color: black;
 	font-family: 'Electrolize', sans-serif;
 	margin:0;
 	padding:0;
@@ -8,11 +7,16 @@ body {
 }
 #page {
 	min-height:100%;
-	position:relative;
+	background-color: black;
 }
 #header {
 	border-bottom: 5px solid white;
 	height:150px;
+	background-color: black;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
 }
 .banner {
 	position: absolute;
@@ -38,6 +42,7 @@ h3 {
 	position: relative;
 	top: 120px;
 	float: right;
+	background-color: black;
 }
 #nav li {
 	display: block;
@@ -59,10 +64,21 @@ h3 {
 #content {
   font-size: 1em;
   line-height: 1.5em;
-  overflow: hidden;
+  overflow-y: scroll;
   color: white;
   padding-top: 10px;
-  padding-bottom: 75px;
+  padding-bottom: 55px;
+  top: 155px;
+  bottom: 75px;
+  position: absolute; 
+  /*background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(46%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+*/
 }
 #column-one {
 	float: left;
@@ -74,6 +90,8 @@ h3 {
 	width:60%;
 }
 #column-two {
+	position: fixed;
+	right: 0px;
 	float: right;
 	width: 25%;
 }
@@ -88,11 +106,12 @@ h3 {
   clear: both;
   color: white;
   font-size: .7em;
-  position: absolute;
+  position: fixed;
   height:75px;
   bottom:0px;
   right: 5px;
   left: 5px;
+  background-color: black;
 }
 #footer p {
   line-height: 1.5em;
